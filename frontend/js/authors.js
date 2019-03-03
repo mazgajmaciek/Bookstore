@@ -155,7 +155,7 @@ $(function () {
     function renderAuthor(author) {
         var string = `<li class="list-group-item">
                 <div class="panel-heading">
-                <span class="authorTitle" data-id="${author.id}">${author.name} ${author.surname}</span>
+                <span class="authorTitle" data-id="${author.id}" style="white-space: pre-wrap">${author.name} ${author.surname}</span>
             <button data-id="${author.id}"
         class="btn btn-danger pull-right btn-xs btn-book-remove"><i
         class="fa fa-trash"></i>
@@ -177,7 +177,7 @@ $(function () {
     }
 
     function renderEditSelect(author) {
-        var string = `<option value="${author.id}" style="white-space: pre-wrap">${author.name} ${author.surname}</option>`;
+        var string = `<option value="${author.id}">${author.name} ${author.surname}</option>`;
         $authorEditSelect.html($authorEditSelect.html() + string);
     }
 
