@@ -155,7 +155,7 @@ $(function () {
     function renderAuthor(author) {
         var string = `<li class="list-group-item">
                 <div class="panel-heading">
-                <span class="authorTitle" data-id="${author.id}">${author.name} ${author.surname}</span>
+                <span class="authorTitle" data-id="${author.id}">${author.name} + " " + ${author.surname}</span>
             <button data-id="${author.id}"
         class="btn btn-danger pull-right btn-xs btn-book-remove"><i
         class="fa fa-trash"></i>
