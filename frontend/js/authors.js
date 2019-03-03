@@ -140,7 +140,7 @@ $(function () {
                 console.log(id);
                 //updates relevant existing book list title
                 var $authorList = $('[class="authorTitle"][data-id=' + id + ']');
-                $authorList.text(response.success[0].name + " " + response.success[0].surname);
+                $authorList.text(response.success[0].name + '\xa0' + response.success[0].surname);
 
 
             })
