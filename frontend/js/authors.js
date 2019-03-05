@@ -140,7 +140,7 @@ $(function () {
                 console.log(id);
                 //updates relevant existing book list title
                 var $authorList = $('[class="authorTitle"][data-id=' + id + ']');
-                $authorList.text(response.success[0].name + response.success[0].surname);
+                $authorList.text(response.success[0].name + " " + response.success[0].surname);
 
 
             })
@@ -155,7 +155,7 @@ $(function () {
     function renderAuthor(author) {
         var string = `<li class="list-group-item">
                 <div class="panel-heading">
-                <span class="authorTitle" data-id="${author.id}">${author.name}` + " " + `${author.surname}</span>
+                <span class="authorTitle" data-id="${author.id}">${author.name} ${author.surname}</span>
             <button data-id="${author.id}"
         class="btn btn-danger pull-right btn-xs btn-book-remove"><i
         class="fa fa-trash"></i>
